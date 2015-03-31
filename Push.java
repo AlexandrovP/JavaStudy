@@ -3,10 +3,11 @@ import java.util.Stack;
 
 //Created by Pavel A. on 07.03.15.
 
-public class Push implements Cmd {;
-    int x;
+public class Push implements Cmd {
+    double x;
 
     @Override
-    public Object exec(Stack<Integer> st, String[] parts) { return st.push(x);
+    public Object exec(Stack<Double> st, String[] parts) {
+        return st.push(x);
     }
 }
